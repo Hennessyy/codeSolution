@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= thread.title
+  h4 Created by: #{thread.author}
+  p= thread.body
+  br
+  a.btn.btn-dark(href='/thread/edit/'+thread._id) Back 
+     
+  a.btn.btn-primary(href='/thread/edit/'+thread._id) Edit 
+
+  a.btn.btn-danger.delete-thread(href='#',data-id=thread._id) Delete
+  

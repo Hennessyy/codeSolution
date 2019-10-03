@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title //codeSolutions
+    link(rel='stylesheet' href='/bootstrap/dist/css/bootstrap.css')
+    link(rel='stylesheet' href='/css/style.css')  
+  body
+    nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+      a.navbar-brand(href='/') //codeSolutions
+      button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarsExampleDefault.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto                                
+        form.form-inline.my-2.my-lg-0
+          ul.navbar-nav.mr-auto
+            li.nav-item
+              a.nav-link(href='/codesolutions/forums') Forums
+            li.nav-item
+              a.nav-link(href='/codesolutions/register') Register 
+            li.nav-item
+              a.nav-link(href='/codesolutions/login') Login
+
+    .container
+      block content
+      br
+      hr
+      footer
+        p Copyright &copy;codeSolutions 2019
+    script(src='/jquery/dist/jquery.js') 
+    script(src='/bootstrap/dist/js/bootstrap.js') 
+    script(src='/js/main.js')
+    

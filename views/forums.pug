@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1 #{title}
+    ul.list-group
+      each forum, i in forums
+        li.list-group-item
+          a(href="/codesolutions/forums/"+forum._id)= forum.title
+    br
+    a.btn.btn-primary(href='/codesolutions/forums/thread/add') New Thread
